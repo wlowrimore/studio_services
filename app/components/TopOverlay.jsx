@@ -1,20 +1,23 @@
 import Image from "next/image";
 import React from "react";
 
-import Crown from "../../public/images/svg/32562.svg";
+import Crown from "../../public/images/svg/crown.svg";
 
 const TopOverlay = () => {
   return (
-    <div className="w-screen h-[15rem] flex items-center px-[3rem]">
-      <Image
-        src={Crown}
-        alt="crown-logo"
-        width={100}
-        height={100}
-        className="w-44"
-      />
-      <h1 className="relative right-[8rem] top-[0.5rem] text-7xl text-teal-700 uppercase">
-        imperial studios
+    <div className="w-screen min-h-screen flex items-center justify-center px-[3rem] bg-topoverlay bg-no-repeat bg-cover">
+      <h1 className="fixed flex text-7xl text-teal-500 uppercase">
+        imperial
+        <span className="relative bottom-10 px-2">
+          <Image
+            src={Crown}
+            alt="crown-logo"
+            width={100}
+            height={100}
+            className="w-44"
+          />
+        </span>
+        studios
       </h1>
     </div>
   );

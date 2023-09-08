@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        customabout: 'url("/images/stacked_stones.jpg")',
-        customhome: 'url("/images/studio_lobby_chill.jpg")',
+        customhome: 'url("/images/control-room.jpg")',
+        topoverlay: 'url("/images/studio_lobby_chill.jpg")',
+        midoverlay: 'url("/images/rose_silk.jpg")',
+        customblob: 'url("/images/stacked_stones.jpg")',
       },
     },
   },

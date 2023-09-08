@@ -1,3 +1,4 @@
+import MainNav from "./components/navigation/MainNav";
 import "./globals.css";
 import { Comfortaa } from "next/font/google";
 
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={comfort.className}>{children}</body>
+      <body className={comfort.className}>
+        <MainNav />
+        {children}
+      </body>
     </html>
   );
 }

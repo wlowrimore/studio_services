@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <TopOverlay />
-      <section>
+      <section id="home">
         <HomePage />
       </section>
       <MidOverlay />
-      <section>
+      <section id="about">
         <About />
       </section>
     </main>
