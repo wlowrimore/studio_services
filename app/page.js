@@ -1,8 +1,10 @@
 import Image from "next/image";
 import HomePage from "./components/home/page";
 import TopOverlay from "./components/TopOverlay";
-import MidOverlay from "./components/MidOverlay";
+import Packets from "./components/packets/page";
 import About from "./components/about/page";
+import Services from "./components/services/page";
+import ServicesDetails from "./components/ServicesDetails";
 
 export default function Home() {
   return (
@@ -11,9 +13,17 @@ export default function Home() {
       <section id="home">
         <HomePage />
       </section>
-      <MidOverlay />
-      <section id="about">
+      <section id="pricing">
+        <Packets />
+      </section>
+      <section>
         <About />
+      </section>
+      <section>
+        <ServicesDetails />
+      </section>
+      <section>
+        <Services />
       </section>
     </main>
   );

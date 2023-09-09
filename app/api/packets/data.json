@@ -1,0 +1,47 @@
+[
+  {
+    "id": "p1",
+    "title": "Demo",
+    "color": "#dcfce7",
+    "desc1": "18 hours of studio time",
+    "desc2": "8 tracks per recording",
+    "desc3": "Rough mix",
+    "desc4": "Record a demo",
+    "price": "499",
+    "studio": "Studio E",
+    "image": "/images/demo_control_room.jpg"
+  },
+  {
+    "id": "p2",
+    "title": "Basic",
+    "desc1": "24 hours of studio time",
+    "desc2": "8 tracks per song",
+    "desc3": "Rough",
+    "desc4": "Record an EP",
+    "price": "799",
+    "studio": "Studio D",
+    "image": "/images/basic_control_room.jpg"
+  },
+  {
+    "id": "p3",
+    "title": "Standard",
+    "desc1": "40 hours of studio time",
+    "desc2": "14 tracks per recording",
+    "desc3": "Final mix (Not Mastered)",
+    "desc4": "Record a full album",
+    "price": "1099",
+    "studio": "Studio C",
+    "image": "/images/comfy_control_room.jpg"
+  },
+  {
+    "id": "p4",
+    "title": "Pro",
+    "desc1": "80 hours of studio time",
+    "desc2": "24 tracks per recording",
+    "desc3": "Final mix and mastered",
+    "desc4": "Record a full album",
+    "price": "1999",
+    "studio": "Studio B",
+    "image": "/images/pro_control_room.jpg"
+  }
+]

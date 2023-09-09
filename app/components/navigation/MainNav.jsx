@@ -40,7 +40,7 @@ const MainNav = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="#" className="nav-link">
+          <Link href="#pricing" className="nav-link">
             <Image
               src={Pricing}
               alt="dollar-symbol"
