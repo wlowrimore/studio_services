@@ -14,6 +14,7 @@ module.exports = {
         midoverlayalt: 'url("/images/rose_silk.jpg")',
         customabout: 'url("/images/imperial_studio_front.jpg")',
         cansdown: 'url("/images/cansdown.jpg")',
+        vinylrecord: 'url("/images/recordbg.jpg")',
       },
     },
   },

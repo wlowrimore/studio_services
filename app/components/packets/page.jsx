@@ -16,7 +16,7 @@ const Packets = () => {
   }, []);
 
   return (
-    <div className="w-full mx-auto bg-gray-950 bg-opacity-80 py-16 pl-[20rem] pr-[25rem]">
+    <div className="w-full mx-auto bg-gray-950 bg-opacity-80 py-16 pl-[20rem] pr-[14rem]">
       <p className="text-xl text-white pb-8 ">
         <span className="text-green-700">Imperial Studios</span> comes fully
         equipt with quality gear and a quality staff. We are located in the
