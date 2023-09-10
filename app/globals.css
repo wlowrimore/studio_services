@@ -14,3 +14,15 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
   background: transparent;
   }
+
+.scrollbar::-webkit-scrollbar {
+  width: 0.15rem;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+  background: indianred;
+  }
