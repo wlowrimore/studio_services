@@ -3,7 +3,7 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="min-h-screen w-screen bg-customhome bg-fixed bg-no-repeat bg-cover bg-center flex flex-col items-center">
-      <div className="flex flex-col justify-center w-full h-[40rem] border-t-4 border-white mx-auto bg-gray-950 bg-opacity-80 py-12 pl-[20rem] pr-[15rem]">
+      <div className="flex flex-col justify-center w-full h-[30rem] border-t-4 border-white mx-auto bg-gray-950 bg-opacity-80 py-12 pl-[20rem] pr-[15rem]">
         <h1 className="text-3xl text-white tracking-wider uppercase font-semibold">
           A Unique Recording Experience
         </h1>

@@ -21,7 +21,7 @@ const PacketCard = ({ packet }) => {
             </h4>
           </div>
           <div className="flex flex-col justify-center items-center mb-4">
-            <h3 className="text-2xl font-bold">{packet.studio}</h3>
+            <h3 className="text-2xl font-bold uppercase">{packet.studio}</h3>
           </div>
           <div className="w-full my-4">
             <Image
