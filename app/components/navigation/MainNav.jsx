@@ -28,7 +28,7 @@ const MainNav = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="#" className="nav-link">
+          <Link href="#about" className="nav-link">
             <Image
               src={WhoWeAre}
               alt="question-mark"
@@ -53,7 +53,7 @@ const MainNav = () => {
         </li>
 
         <li className="nav-item">
-          <Link href="#" className="nav-link">
+          <Link href="#services" className="nav-link">
             <Image
               src={Gear}
               alt="microphone"
@@ -61,12 +61,12 @@ const MainNav = () => {
               height={40}
               className="w-[2rem] ml-[1.3rem]"
             />
-            <span className="link-text">the gear</span>
+            <span className="link-text">services</span>
           </Link>
         </li>
 
         <li className="nav-item">
-          <Link href="#" className="nav-link">
+          <Link href="#contact" className="nav-link">
             <Image
               src={BookIt}
               alt="calendar"
@@ -78,7 +78,7 @@ const MainNav = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="#" className="nav-link">
+          <Link href="#contact" className="nav-link">
             <Image
               src={ContactUs}
               alt="contact-link"

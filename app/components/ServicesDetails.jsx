@@ -13,10 +13,13 @@ import Effects from "../../public/images/svg/sound_effects.svg";
 
 const ServicesDetails = () => {
   return (
-    <main className="w-screen h-auto text-2xl bg-vinylrecord bg-no-repeat bg-cover bg-opacity-20">
-      <div className="w-3/4 mx-auto py-[6rem] flex justify-center">
+    <div
+      id="services"
+      className="w-screen min-h-screen text-2xl bg-vinylrecord bg-no-repeat bg-cover bg-opacity-20"
+    >
+      <div className="w-3/4 mx-auto pt-[10rem] pb-[5rem] flex justify-center items-center">
         <ul className="grid grid-cols-3 w-full gap-x-44 gap-y-24 py-0 pl-[4rem] list-none uppercase">
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={OnSite}
               alt="in-house-sessions"
@@ -26,7 +29,7 @@ const ServicesDetails = () => {
             />
             in house sessions
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Remote}
               alt="remote-sessions"
@@ -36,7 +39,7 @@ const ServicesDetails = () => {
             />
             remote (live) sessions
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Radio}
               alt="radio-ads"
@@ -46,7 +49,7 @@ const ServicesDetails = () => {
             />
             radio ads
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Choirs}
               alt="large-choirs"
@@ -56,7 +59,7 @@ const ServicesDetails = () => {
             />
             large choirs
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Jingles}
               alt="jingles"
@@ -66,7 +69,7 @@ const ServicesDetails = () => {
             />
             jingles
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Scores}
               alt="movie-scores"
@@ -76,7 +79,7 @@ const ServicesDetails = () => {
             />
             movie scores
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Symphony}
               alt="symphonic-and-orchestral"
@@ -86,7 +89,7 @@ const ServicesDetails = () => {
             />
             symphonic & orchestral
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Book}
               alt="audio-book"
@@ -96,7 +99,7 @@ const ServicesDetails = () => {
             />
             audio books
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-x-4">
             <Image
               src={Effects}
               alt="sound-effects"
@@ -108,7 +111,7 @@ const ServicesDetails = () => {
           </li>
         </ul>
       </div>
-    </main>
+    </div>
   );
 };
 

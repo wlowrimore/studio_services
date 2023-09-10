@@ -2,7 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen w-screen bg-customabout bg-fixed bg-no-repeat bg-cover bg-center flex flex-col border-t-4 border-white items-center">
+    <div
+      id="about"
+      className="min-h-screen w-screen bg-customabout bg-fixed bg-no-repeat bg-cover bg-center flex flex-col border-t-4 border-white items-center"
+    >
       <div className="w-full h-[20rem] mx-auto bg-cyan-950 bg-opacity-80 py-12 pl-[20rem] pr-[15rem]">
         <div className="flex flex-col justify-center">
           <h1 className="text-3xl text-white tracking-wider uppercase font-semibold">

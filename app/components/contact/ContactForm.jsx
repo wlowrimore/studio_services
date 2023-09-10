@@ -226,7 +226,7 @@ const ContactForm = () => {
               htmlFor="message"
               name="message"
               rows="5"
-              className="w-full"
+              className="w-full text-black p-2"
             />
           </div>
         )}
@@ -234,13 +234,13 @@ const ContactForm = () => {
         <div className="flex gap-3 py-3 w-full">
           <button
             type="submit"
-            className="w-full py-2 px-2 text-xl bg-emerald-800 bg-opacity-30 border border-white rounded-md uppercase hover:bg-"
+            className="w-full py-2 px-2 text-xl bg-emerald-800 bg-opacity-30 border border-white rounded-md uppercase hover:bg-opacity-50"
           >
             send
           </button>
           <button
             type="submit"
-            className="w-full py-2 px-2 text-xl bg-red-800 bg-opacity-30 border border-white rounded-md uppercase hover:bg-"
+            className="w-full py-2 px-2 text-xl bg-red-800 bg-opacity-30 border border-white rounded-md uppercase hover:bg-opacity-50"
           >
             clear
           </button>

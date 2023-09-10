@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <main className="w-full mx-[20rem]">
+    <main id="contact" className="w-full h-auto mx-[20rem]">
       <section className="flex justify-between">
         <div className="w-auto flex flex-col mb-4 items-center gap-4">
           <div className="flex items-center gap-4">

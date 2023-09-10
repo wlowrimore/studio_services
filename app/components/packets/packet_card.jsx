@@ -29,7 +29,7 @@ const PacketCard = ({ packet }) => {
               alt={packet.title}
               width={500}
               height={500}
-              className="opacity-90 border border-gray-950 rounded-sm shadow-md shadow-black hover: cursor-pointer hover:shadow-none hover:scale-[300%] transition duration-500"
+              className="opacity-90 border border-gray-950 rounded-sm shadow-md shadow-black hover: cursor-pointer hover:scale-[105%] transition duration-500"
             />
           </div>
         </div>
