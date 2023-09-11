@@ -5,10 +5,12 @@ import React, { useState } from "react";
 const ContactForm = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <section className="w-[42rem]">
+    <section className="w-full h-auto flex flex-col">
       <form className="bg-gray-950 text-white bg-opacity-70 p-4">
-        <div className="py-3">
-          <label htmlFor="senders-email">email</label>
+        <div className="py-1">
+          <label htmlFor="senders-email" className="text-sm">
+            email
+          </label>
           <input
             type="email"
             name="email"
@@ -18,8 +20,10 @@ const ContactForm = () => {
         </div>
 
         <div className="flex gap-4">
-          <div className="py-3">
-            <label htmlFor="first-name">first name</label>
+          <div className="py-1">
+            <label htmlFor="first-name" className="text-sm">
+              first name
+            </label>
             <input
               type="text"
               name="first-name"
@@ -27,8 +31,10 @@ const ContactForm = () => {
               required
             />
           </div>
-          <div className="py-3">
-            <label htmlFor="last-name">last name</label>
+          <div className="py-1">
+            <label htmlFor="last-name" className="text-sm">
+              last name
+            </label>
             <input
               type="text"
               name="last-name"
@@ -38,8 +44,10 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="py-3">
-          <label htmlFor="project-name">project name</label>
+        <div className="py-1">
+          <label htmlFor="project-name" className="text-sm">
+            project name
+          </label>
           <input
             type="text"
             name="project-name"
@@ -48,8 +56,10 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className="py-3">
-          <label htmlFor="phone-number">phone #</label>
+        <div className="py-1">
+          <label htmlFor="phone-number" className="text-sm">
+            phone #
+          </label>
           <input
             type="tel"
             name="phone"
@@ -58,10 +68,10 @@ const ContactForm = () => {
           />
         </div>
 
-        <legend className="py-2 text-center">
+        <legend className="py-2 text-center text-sm">
           Which recording package are you interested in?
         </legend>
-        <div class="flex justify-center gap-6">
+        <div class="grid grid-cols-2 justify-center gap-6 text-sm">
           <div class="inline-flex items-center">
             <label
               class="relative flex cursor-pointer items-center rounded-full p-3"

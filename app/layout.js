@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={comfort.className}>
         <MainNav />
-        <div className="modal-root" />
         {children}
         <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
       </body>

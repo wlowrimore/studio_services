@@ -14,7 +14,7 @@ import Link from "next/link";
 const MainNav = () => {
   return (
     <nav className="navbar">
-      <ul className="navbar-nav min-h-screen bg-teal-700">
+      <ul className="navbar-nav">
         <li className="logo">
           <Link href="/" className="nav-link">
             <span className="link-text-logo">imperial studios</span>

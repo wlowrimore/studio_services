@@ -1,15 +1,15 @@
 import Image from "next/image";
 import HomePage from "./components/home/page";
-import TopOverlay from "./components/TopOverlay";
+import HomeOverlay from "./components/home/homeOverlay";
 import Packets from "./components/packets/page";
 import About from "./components/about/page";
 import Services from "./components/services/page";
-import ServicesDetails from "./components/ServicesDetails";
+import Contact from "./components/contact/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <TopOverlay />
+    <main className="">
+      <HomeOverlay />
       <section id="home">
         <HomePage />
       </section>
@@ -20,10 +20,10 @@ export default function Home() {
         <About />
       </section>
       <section>
-        <ServicesDetails />
+        <Services />
       </section>
       <section>
-        <Services />
+        <Contact />
       </section>
     </main>
   );

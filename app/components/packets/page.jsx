@@ -20,17 +20,18 @@ const Packets = () => {
   }, []);
 
   return (
-    <div className="w-full mx-auto bg-gray-950 bg-opacity-80 pt-16 pb-2 pl-[20rem] pr-[14rem]">
-      <p className="text-xl text-white pb-8 ">
-        <span className="text-green-700">Imperial Studios</span> comes fully
-        equipt with quality gear and a quality staff. We are located in the
-        heart of Nashville, TN with a multitude of 1st, 2nd, and 3rd call
+    // <div className="w-full mx-auto bg-gray-950 bg-opacity-80 pt-16 pb-2 pl-[20rem] pr-[14rem]">
+    <div className="w-full mx-auto bg-gray-900 px-2 py-4">
+      <p className="text-md text-white">
+        <span className="text-green-600 text-lg">Imperial Studios</span> comes
+        fully equipt with quality gear and a quality staff. We are located in
+        the heart of Nashville, TN with a multitude of 1st, 2nd, and 3rd call
         musicians standing by. Whether you require a digital interface, or you
         just want the vintage, organic overtones of a good ole fashion reel to
         reel recording...we&apos;ve got you covered.
       </p>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 gap-10">
           {packets.map((packet, index) => (
             <div key={`card-${index}`} className="flex">
               <div>
@@ -51,19 +52,19 @@ const Packets = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-3 py-6 gap-x-10">
-        <div className="flex flex-col py-4">
-          <h1 className="text-4xl text-emerald-600 uppercase">
+      <div className="grid grid-cols-1 py-4 px-2 text-center">
+        <div className="flex flex-col">
+          <h1 className="text-2xl text-emerald-600 uppercase">
             financing available
           </h1>
-          <p className="text-lg text-white tracking-wider">
-            As &apos;Music Biz&apos; people, we understand how hard it can be to
-            fund your dream of recording your ideas, so we teamed up with Belz
-            Cargo Financial to make it easier!
+          <p className="text-md text-center text-white tracking-wider px-1 pb-4">
+            As &apos;Music Biz&apos; people, we understand how just hard it can
+            get when funding your own project, so we teamed up with Belz Cargo
+            Financial to make it easier!
           </p>
         </div>
         <div className="flex flex-col items-center py-4">
-          <h1 className="text-4xl text-emerald-600 uppercase">we accept</h1>
+          <h1 className="text-2xl text-emerald-600 uppercase">we accept</h1>
           <div>
             <Image
               src={Credit}
@@ -74,19 +75,21 @@ const Packets = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col items-start py-4">
-          <h1 className="text-4xl text-emerald-600 uppercase">
+        <div className="flex flex-col py-4">
+          <h1 className="text-2xl text-emerald-600 uppercase">
             checks accepted
           </h1>
-          <ul className="text-lg text-white tracking-wider list-disc">
+          <ul className="text-md text-white tracking-wider list-none">
             <li>
               All checks must be submitted 4 weeks prior to the start date of
               your session.
             </li>
+            <br />
             <li>
               Check total must equal the amount of the full scheduled session.
               No partials will be accepted.
             </li>
+            <br />
             <li>
               A 20&#37; service fee will be charged on all prematurely
               terminated sessions.

@@ -3,29 +3,34 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <main id="contact" className="w-full h-auto mx-[20rem]">
-      <section className="flex justify-between">
+    // <main id="contact" className="w-full h-auto bg-contact bg-no-repeat bg-fixed bg-cover">
+
+    <main
+      id="contact"
+      className="w-screen bg-contact bg-no-repeat bg-fixed bg-cover"
+    >
+      <section className="flex flex-col py-4 px-2">
         <div className="w-auto flex flex-col mb-4 items-center gap-4">
           <div className="flex items-center gap-4">
-            <h1 className="text-3xl w-fit py-3 px-6 uppercase text-black bg-gray-950 bg-opacity-30 rounded-[50%]">
+            {/* <h1 className="text-xl w-fit py-1 px-2 uppercase text-black bg-gray-950 bg-opacity-30 rounded-[50%]">
               1
-            </h1>
-            <h3 className="text-3xl text-gray-950 font-semibold tracking-wider uppercase">
-              fill out and send in this form
+            </h1> */}
+            <h3 className="text-xl text-gray-950 font-semibold tracking-wider uppercase">
+              complete this form
             </h3>
           </div>
           <ContactForm />
         </div>
-        <div className="w-1/2 flex flex-col mb-4 items-center gap-4">
+        <div className="w-full flex flex-col py-4 px-2 items-center gap-4">
           <div className="flex items-center gap-4">
-            <h1 className="text-3xl w-fit py-3 px-6 uppercase text-black bg-gray-950 bg-opacity-30 rounded-[50%]">
+            {/* <h1 className="text-3xl w-fit py-3 px-6 uppercase text-black bg-gray-950 bg-opacity-30 rounded-[50%]">
               2
-            </h1>
-            <h3 className="text-3xl text-gray-950 font-semibold tracking-wider uppercase">
+            </h1> */}
+            <h3 className="text-xl text-gray-950 font-semibold tracking-wider uppercase">
               please wait patiently
             </h3>
           </div>
-          <div className="h-[32rem] flex flex-col mx-[8rem] overflow-y-auto scrollbar">
+          <div className="h-[32rem] flex flex-col overflow-y-auto scrollbar">
             <p className="text-lg tracking-wider">
               We, here at{" "}
               <span className="text-teal-800 font-bold">Imperial Studios</span>{" "}
