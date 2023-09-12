@@ -1,6 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import ContactForm from "./ContactForm";
-import Map from "../Maps";
+
+import Facebook from "../../../public/images/svg/facebook1.svg";
+import Twitter from "../../../public/images/svg/twitter1.svg";
+import Youtube from "../../../public/images/svg/youtube1.svg";
+import Instagram from "../../../public/images/svg/instagram1.svg";
 
 const Contact = () => {
   const address = "829 N Charlotte Ave Nashville, TN";
@@ -10,7 +15,7 @@ const Contact = () => {
       id="contact"
       className="w-screen md:min-h-screen bg-contact bg-no-repeat bg-fixed bg-cover"
     >
-      <section className="flex flex-col md:gap-x-10 pt-4 md:flex-row md:justify-between md:items-center md:py-[12rem] md:pl-[15rem]">
+      <section className="flex flex-col md:gap-x-10 pt-4 md:flex-row md:justify-between md:items-center md:pt-[12rem] md:pl-[15rem]">
         <div className="w-auto flex flex-col mb-4 items-center gap-4">
           <ContactForm />
         </div>
@@ -64,19 +69,89 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center pb-[4rem]">
-        <div className="w-full">
-          <Map address={address} />
-        </div>
-        <div className="w-full flex flex-col items-center border-y-4 border-white text-white bg-gray-950 bg-opacity-70 py-4">
-          <h2 className="text-lg font-bold tracking-wider uppercase">
-            imperial studios
-          </h2>
-          <p>829 N. Charlotte Ave.</p>
-          <p>Nashville, TN</p>
-          <p>37203-7551</p>
+      <section className="w-rull flex flex-col justify-center items-center md:items-center md:pb-[12rem]">
+        <div className="w-full md:p-6 flex flex-col border-y-4 border-white md:border-none text-white bg-gray-950 bg-opacity-70 py-4">
+          <div className="flex flex-col items-center md:items-start mx-auto">
+            <h2 className="text-lg md:text-3xl font-bold tracking-wider uppercase">
+              imperial studios
+            </h2>
+            <p className="text-xl">829 N. Charlotte Ave.</p>
+            <p className="text-xl">Nashville, TN</p>
+            <p className="text-xl">37203-7551</p>
+            <div className="py-4">
+              <ul className="flex flex-col items-center md:items-start">
+                <li>
+                  <Link
+                    href="mailto://fakemail@email.com"
+                    className="tracking-wide text-teal-400 underline hover:no-underline"
+                  >
+                    info@imperialstudios.com
+                  </Link>
+                </li>
+                <li>
+                  <p className="">615.321.5678</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex justify-center w-full">
+            <ul className="flex gap-6 md:gap-14">
+              <li>
+                <Link href="#">
+                  <Image
+                    src={Facebook}
+                    alt="facebook-icon"
+                    width={500}
+                    height={500}
+                    className="w-8 md:w-10"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <Image
+                    src={Twitter}
+                    alt="twitter-icon"
+                    width={500}
+                    height={500}
+                    className="w-8 md:w-10"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <Image
+                    src={Youtube}
+                    alt="youtube-icon"
+                    width={500}
+                    height={500}
+                    className="w-8 md:w-10"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <Image
+                    src={Instagram}
+                    alt="instagram-icon"
+                    width={500}
+                    height={500}
+                    className="w-8 md:w-10"
+                  />
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+
+      <footer className="flex px-2 pb-[3rem] md:justify-center md:pb-0">
+        <p className="text-[0.1%] md:text-[0.6rem] md:tracking-wide">
+          &dagger; This is not a real site nor entity. All images were found on
+          the internet under free public domain. &copy; Copyright 2023
+          fakenamedev & William Lowrimore, All Rights Reserved.
+        </p>
+      </footer>
     </main>
   );
 };

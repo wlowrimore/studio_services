@@ -123,7 +123,7 @@
 @media only screen and (max-width: 600px) {
   .navbar {    
     width: 100vw;
-    height: 4rem;
+    height: 3rem;
     position: fixed;
     bottom: 0;
     transition: none;
