@@ -1,13 +1,36 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const ContactForm = () => {
   const [toggle, setToggle] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    first_name: "",
+    last_name: "",
+    phone: "",
+    project_name: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(
+      `Name: ${formData.first_name} ${formData.last_name}, Email: ${formData.email}, Project Name: ${formData.project_name}, Message: ${formData.message}`
+    );
+  };
 
   return (
     <section className="md:w-[50rem] md:h-[50rem] flex flex-col">
-      <form className="md:w-full bg-gray-950 text-white bg-opacity-70 p-4 md:py-8">
+      <form
+        onSubmit={handleSubmit}
+        className="md:w-full bg-gray-950 text-white bg-opacity-70 p-4 md:py-8"
+      >
         <div className="flex items-center md:w-full gap-4">
           <h3 className="text-xl text-center md:text-left md:pt-3 md:pb-6 w-full md:text-3xl text-orange-100 font-semibold md:font-extrabold tracking-wider uppercase">
             request form
@@ -20,6 +43,8 @@ const ContactForm = () => {
           <input
             type="email"
             name="email"
+            defaultValue={formData.email}
+            onChange={handleChange}
             className="w-full h-[2rem] px-2 bg-transparent border border-white"
             required
           />
@@ -32,7 +57,9 @@ const ContactForm = () => {
             </label>
             <input
               type="text"
-              name="first-name"
+              name="first_name"
+              defaultValue={formData.first_name}
+              onChange={handleChange}
               className="w-full h-[2rem] px-2 bg-transparent border border-white"
               required
             />
@@ -43,7 +70,9 @@ const ContactForm = () => {
             </label>
             <input
               type="text"
-              name="last-name"
+              name="last_name"
+              defaultValue={formData.last_name}
+              onChange={handleChange}
               className="w-full h-[2rem] px-2 bg-transparent border border-white"
               required
             />
@@ -56,7 +85,9 @@ const ContactForm = () => {
           </label>
           <input
             type="text"
-            name="project-name"
+            name="project_name"
+            defaultValue={formData.project_name}
+            onChange={handleChange}
             className="w-full h-[2rem] px-2 bg-transparent border border-white"
             required
           />
@@ -69,6 +100,8 @@ const ContactForm = () => {
           <input
             type="tel"
             name="phone"
+            defaultValue={formData.email}
+            onChange={handleChange}
             className="w-full h-[2rem] px-2 bg-transparent border border-white"
             required
           />
@@ -241,6 +274,8 @@ const ContactForm = () => {
             <textarea
               htmlFor="message"
               name="message"
+              defaultValue={formData.message}
+              onChange={handleChange}
               rows="5"
               className="w-full text-black p-2"
             />
