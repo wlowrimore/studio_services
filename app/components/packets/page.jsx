@@ -58,7 +58,7 @@ const Packets = () => {
             financing available
           </h1>
           <p className="text-md text-center text-white tracking-wider px-1 pb-4">
-            As &apos;Music Biz&apos; people, we understand how just hard it can
+            As &apos;Music Biz&apos; people, we understand just how hard it can
             get when funding your own project, so we teamed up with Belz Cargo
             Financial to make it easier!
           </p>
