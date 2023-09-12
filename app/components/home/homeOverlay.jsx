@@ -15,7 +15,7 @@ const HomeOverlay = () => {
             alt="crown-logo"
             width={100}
             height={100}
-            className="w-10"
+            className="w-10 lg:w-32 lg:relative lg:bottom-4"
           />
         </span>
         studios

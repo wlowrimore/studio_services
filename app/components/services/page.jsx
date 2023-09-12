@@ -21,9 +21,14 @@ const ServicesDetails = () => {
     >
       {/* <div className="w-3/4 mx-auto pt-[10rem] pb-[5rem] flex justify-center items-center"> */}
 
-      <div className="flex flex-col py-6 px-2 justify-center items-center">
-        <ul className="grid grid-cols-1 w-full gap-8 list-none uppercase text-teal-100">
-          <li className="flex flex-col items-center justify-center gap-x-4">
+      <div className="flex flex-col py-6 px-2 justify-center items-center md:py-12 md:h-[50rem] md:pl-[20rem] md:pr-[15rem]">
+        <div className="pt-20">
+          <h1 className="text-[25rem] text-gray-950 opacity-10 uppercase tracking-widest relative top-[950%]">
+            services
+          </h1>
+        </div>
+        <ul className="grid grid-cols-1 md:grid-cols-3 md:pb-12 w-full gap-10 md:gap-x-4 md:md:gap-y-24 list-none uppercase text-teal-100">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={OnSite}
               alt="in-house-sessions"
@@ -33,7 +38,7 @@ const ServicesDetails = () => {
             />
             in house sessions
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Remote}
               alt="remote-sessions"
@@ -43,7 +48,7 @@ const ServicesDetails = () => {
             />
             remote (live) sessions
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Radio}
               alt="radio-ads"
@@ -53,7 +58,7 @@ const ServicesDetails = () => {
             />
             radio ads
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Choirs}
               alt="large-choirs"
@@ -63,7 +68,7 @@ const ServicesDetails = () => {
             />
             large choirs
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Jingles}
               alt="jingles"
@@ -73,7 +78,7 @@ const ServicesDetails = () => {
             />
             jingles
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Scores}
               alt="movie-scores"
@@ -83,7 +88,7 @@ const ServicesDetails = () => {
             />
             movie scores
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Symphony}
               alt="symphonic-and-orchestral"
@@ -93,7 +98,7 @@ const ServicesDetails = () => {
             />
             symphonic & orchestral
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Book}
               alt="audio-book"
@@ -103,7 +108,7 @@ const ServicesDetails = () => {
             />
             audio books
           </li>
-          <li className="flex flex-col items-center justify-center gap-x-4">
+          <li className="flex flex-col items-center justify-center">
             <Image
               src={Effects}
               alt="sound-effects"

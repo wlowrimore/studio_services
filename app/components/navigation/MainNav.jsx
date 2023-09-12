@@ -34,7 +34,7 @@ const MainNav = () => {
               alt="question-mark"
               width={40}
               height={40}
-              className="w-6 ml-[1.5rem]"
+              className="md:w-6 md:ml-[1.5rem]"
             />
             <span className="link-text">about</span>
           </Link>
@@ -46,7 +46,7 @@ const MainNav = () => {
               alt="dollar-symbol"
               width={40}
               height={40}
-              className="w-6 ml-[1.5rem]"
+              className="md:w-6 md:ml-[1.5rem]"
             />
             <span className="link-text">pricing</span>
           </Link>
@@ -59,7 +59,7 @@ const MainNav = () => {
               alt="microphone"
               width={40}
               height={40}
-              className="w-[2rem] ml-[1.3rem]"
+              className="md:w-[2rem] md:ml-[1.25rem]"
             />
             <span className="link-text">services</span>
           </Link>
@@ -72,9 +72,9 @@ const MainNav = () => {
               alt="calendar"
               width={40}
               height={40}
-              className="w-[2rem] ml-[1.5rem]"
+              className="md:w-[2rem] md:ml-[1.4rem]"
             />
-            <span className="link-text">book it</span>
+            <span className="link-text">schedule</span>
           </Link>
         </li>
         <li className="nav-item">
@@ -84,7 +84,7 @@ const MainNav = () => {
               alt="contact-link"
               width={40}
               height={40}
-              className="w-[2rem] ml-[1.5rem]"
+              className="md:w-[2rem] md:ml-[1.5rem]"
             />
             <span className="link-text">contact</span>
           </Link>

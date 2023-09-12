@@ -21,7 +21,7 @@ const Packets = () => {
 
   return (
     // <div className="w-full mx-auto bg-gray-950 bg-opacity-80 pt-16 pb-2 pl-[20rem] pr-[14rem]">
-    <div className="w-full mx-auto bg-gray-900 px-2 py-4">
+    <div className="w-full mx-auto bg-gray-900 px-2 pt-4 pb-2 md:pt-16 md:pl-[20rem] md:pr-[18rem]">
       <p className="text-md text-white">
         <span className="text-green-600 text-lg">Imperial Studios</span> comes
         fully equipt with quality gear and a quality staff. We are located in
@@ -31,7 +31,7 @@ const Packets = () => {
         reel recording...we&apos;ve got you covered.
       </p>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 gap-10">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {packets.map((packet, index) => (
             <div key={`card-${index}`} className="flex">
               <div>
@@ -71,7 +71,7 @@ const Packets = () => {
               alt="credit-cards"
               width={500}
               height={500}
-              className="w-56 text-center opacity-70"
+              className="w-56 text-center opacity-80"
             />
           </div>
         </div>
@@ -98,7 +98,7 @@ const Packets = () => {
         </div>
       </div>
       <div className="pt-6 flex justify-center">
-        <p className="text-sm text-white tracking-wider">
+        <p className="text-sm text-white md:text-gray-400 tracking-wider md:tracking-widest">
           <span className="relative right-1 bottom-1 text-gray-400">
             &dagger;
           </span>

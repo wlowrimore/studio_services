@@ -6,17 +6,17 @@ const About = () => {
 
     <div
       id="about"
-      className="w-screen bg-customabout bg-fixed bg-no-repeat bg-cover bg-center border-t-4 border-white"
+      className="w-screen bg-customabout bg-fixed bg-no-repeat bg-cover bg-center border-y-4 border-white"
     >
       {/* <div className="w-full h-[20rem] mx-auto bg-cyan-950 bg-opacity-80 py-12 pl-[20rem] pr-[15rem]"> */}
 
-      <div className="w-full bg-cyan-950 bg-opacity-80 py-4 px-2 border-b-4 border-white">
+      <div className="w-full bg-cyan-950 bg-opacity-80 py-4 px-2 h-[30rem] md:py-12 md:h-[40rem] md:pl-[20rem] md:pr-[15rem] border-white">
         <div className="flex flex-col justify-center">
           <h1 className="text-2xl text-white tracking-wider uppercase font-semibold">
             Established in 1977
           </h1>
           <br />
-          <p className="text-white text-md tracking-wider">
+          <p className="text-white text-md tracking-wider h-[25rem] overflow-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at
             tellus at urna condimentum mattis pellentesque. Purus gravida quis

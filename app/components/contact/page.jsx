@@ -1,36 +1,27 @@
 import Link from "next/link";
 import ContactForm from "./ContactForm";
+import Map from "../Maps";
 
 const Contact = () => {
-  return (
-    // <main id="contact" className="w-full h-auto bg-contact bg-no-repeat bg-fixed bg-cover">
+  const address = "829 N Charlotte Ave Nashville, TN";
 
+  return (
     <main
       id="contact"
-      className="w-screen bg-contact bg-no-repeat bg-fixed bg-cover"
+      className="w-screen md:min-h-screen bg-contact bg-no-repeat bg-fixed bg-cover"
     >
-      <section className="flex flex-col py-4 px-2">
+      <section className="flex flex-col md:gap-x-10 pt-4 md:flex-row md:justify-between md:items-center md:py-[12rem] md:pl-[15rem]">
         <div className="w-auto flex flex-col mb-4 items-center gap-4">
-          <div className="flex items-center gap-4">
-            {/* <h1 className="text-xl w-fit py-1 px-2 uppercase text-black bg-gray-950 bg-opacity-30 rounded-[50%]">
-              1
-            </h1> */}
-            <h3 className="text-xl text-gray-950 font-semibold tracking-wider uppercase">
-              complete this form
-            </h3>
-          </div>
           <ContactForm />
         </div>
-        <div className="w-full flex flex-col py-4 px-2 items-center gap-4">
-          <div className="flex items-center gap-4">
-            {/* <h1 className="text-3xl w-fit py-3 px-6 uppercase text-black bg-gray-950 bg-opacity-30 rounded-[50%]">
-              2
-            </h1> */}
-            <h3 className="text-xl text-gray-950 font-semibold tracking-wider uppercase">
-              please wait patiently
+
+        <div className="w-full md:h-[50rem] flex flex-col py-4 md:py-0 px-2 md:mr-[10rem] items-center gap-4">
+          <div className="flex items-center gap-4 md:w-full">
+            <h3 className="text-xl md:text-3xl md:text-end md:font-extrabold text-gray-950 font-semibold tracking-wider uppercase">
+              What next?
             </h3>
           </div>
-          <div className="h-[32rem] flex flex-col overflow-y-auto scrollbar">
+          <div className="h-[40rem] flex flex-col overflow-y-auto scrollbar">
             <p className="text-lg tracking-wider">
               We, here at{" "}
               <span className="text-teal-800 font-bold">Imperial Studios</span>{" "}
@@ -71,6 +62,19 @@ const Contact = () => {
               turpis egestas maecenas.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center pb-[4rem]">
+        <div className="w-full">
+          <Map address={address} />
+        </div>
+        <div className="w-full flex flex-col items-center border-y-4 border-white text-white bg-gray-950 bg-opacity-70 py-4">
+          <h2 className="text-lg font-bold tracking-wider uppercase">
+            imperial studios
+          </h2>
+          <p>829 N. Charlotte Ave.</p>
+          <p>Nashville, TN</p>
+          <p>37203-7551</p>
         </div>
       </section>
     </main>

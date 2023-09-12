@@ -4,10 +4,16 @@ import React, { useState } from "react";
 
 const ContactForm = () => {
   const [toggle, setToggle] = useState(false);
+
   return (
-    <section className="w-full h-auto flex flex-col">
-      <form className="bg-gray-950 text-white bg-opacity-70 p-4">
-        <div className="py-1">
+    <section className="md:w-[50rem] md:h-[50rem] flex flex-col">
+      <form className="md:w-full bg-gray-950 text-white bg-opacity-70 p-4 md:py-8">
+        <div className="flex items-center md:w-full gap-4">
+          <h3 className="text-xl text-center md:text-left md:pt-3 md:pb-6 w-full md:text-3xl text-orange-100 font-semibold md:font-extrabold tracking-wider uppercase">
+            request form
+          </h3>
+        </div>
+        <div className="py-1 md:py-4">
           <label htmlFor="senders-email" className="text-sm">
             email
           </label>
@@ -20,7 +26,7 @@ const ContactForm = () => {
         </div>
 
         <div className="flex gap-4">
-          <div className="py-1">
+          <div className="py-1 md:py-4 md:w-full">
             <label htmlFor="first-name" className="text-sm">
               first name
             </label>
@@ -31,7 +37,7 @@ const ContactForm = () => {
               required
             />
           </div>
-          <div className="py-1">
+          <div className="py-1 md:py-4 md:w-full">
             <label htmlFor="last-name" className="text-sm">
               last name
             </label>
@@ -44,7 +50,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="py-1">
+        <div className="py-1 md:py-4">
           <label htmlFor="project-name" className="text-sm">
             project name
           </label>
@@ -56,7 +62,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className="py-1">
+        <div className="py-1 md:py-4">
           <label htmlFor="phone-number" className="text-sm">
             phone #
           </label>
@@ -68,14 +74,14 @@ const ContactForm = () => {
           />
         </div>
 
-        <legend className="py-2 text-center text-sm">
+        <legend className="py-2 md:py-4 text-center text-sm md:text-xl">
           Which recording package are you interested in?
         </legend>
-        <div class="grid grid-cols-2 justify-center gap-6 text-sm">
-          <div class="inline-flex items-center">
+        <div className="grid grid-cols-2 md:flex md:pb-4 justify-center gap-6 text-sm">
+          <div className="inline-flex items-center">
             <label
-              class="relative flex cursor-pointer items-center rounded-full p-3"
-              for="demo"
+              className="relative flex cursor-pointer items-center rounded-full p-3"
+              htmlFor="demo"
               data-ripple-dark="true"
             >
               <input
@@ -83,12 +89,12 @@ const ContactForm = () => {
                 name="type"
                 type="radio"
                 onChange={() => setToggle(false)}
-                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
+                className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
               />
-              <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
+              <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-3.5 w-3.5"
+                  className="h-3.5 w-3.5"
                   viewBox="0 0 16 16"
                   fill="currentColor"
                 >
@@ -97,28 +103,28 @@ const ContactForm = () => {
               </div>
             </label>
             <label
-              class="mt-px cursor-pointer select-none font-light text-white uppercase"
-              for="demo"
+              className="mt-px cursor-pointer select-none font-light text-white uppercase"
+              htmlFor="demo"
             >
               demo
             </label>
           </div>
-          <div class="inline-flex items-center">
+          <div className="inline-flex items-center">
             <label
-              class="relative flex cursor-pointer items-center rounded-full p-3"
-              for="basic"
+              className="relative flex cursor-pointer items-center rounded-full p-3"
+              htmlFor="basic"
             >
               <input
                 id="basic"
                 name="type"
                 type="radio"
                 onChange={() => setToggle(false)}
-                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
+                className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
               />
-              <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
+              <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-3.5 w-3.5"
+                  className="h-3.5 w-3.5"
                   viewBox="0 0 16 16"
                   fill="currentColor"
                 >
@@ -127,28 +133,28 @@ const ContactForm = () => {
               </div>
             </label>
             <label
-              class="mt-px cursor-pointer select-none font-light text-white uppercase"
-              for="basic"
+              className="mt-px cursor-pointer select-none font-light text-white uppercase"
+              htmlFor="basic"
             >
               basic
             </label>
           </div>
-          <div class="inline-flex items-center">
+          <div className="inline-flex items-center">
             <label
-              class="relative flex cursor-pointer items-center rounded-full p-3"
-              for="standard"
+              className="relative flex cursor-pointer items-center rounded-full p-3"
+              htmlFor="standard"
             >
               <input
                 id="standard"
                 name="type"
                 type="radio"
                 onChange={() => setToggle(false)}
-                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
+                className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
               />
-              <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
+              <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-3.5 w-3.5"
+                  className="h-3.5 w-3.5"
                   viewBox="0 0 16 16"
                   fill="currentColor"
                 >
@@ -157,28 +163,28 @@ const ContactForm = () => {
               </div>
             </label>
             <label
-              class="mt-px cursor-pointer select-none font-light text-white uppercase"
-              for="standard"
+              className="mt-px cursor-pointer select-none font-light text-white uppercase"
+              htmlFor="standard"
             >
               standard
             </label>
           </div>
-          <div class="inline-flex items-center">
+          <div className="inline-flex items-center">
             <label
-              class="relative flex cursor-pointer items-center rounded-full p-3"
-              for="pro"
+              className="relative flex cursor-pointer items-center rounded-full p-3"
+              htmlFor="pro"
             >
               <input
                 id="html"
                 name="type"
                 type="radio"
                 onChange={() => setToggle(false)}
-                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
+                className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
               />
-              <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
+              <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-3.5 w-3.5"
+                  className="h-3.5 w-3.5"
                   viewBox="0 0 16 16"
                   fill="currentColor"
                 >
@@ -187,17 +193,17 @@ const ContactForm = () => {
               </div>
             </label>
             <label
-              class="mt-px cursor-pointer select-none font-light text-white uppercase"
-              for="pro"
+              className="mt-px cursor-pointer select-none font-light text-white uppercase"
+              htmlFor="pro"
             >
               pro
             </label>
           </div>
 
-          <div class="inline-flex items-center">
+          <div className="inline-flex items-center">
             <label
-              class="relative flex cursor-pointer items-center rounded-full p-3"
-              for="custom"
+              className="relative flex cursor-pointer items-center rounded-full p-3"
+              htmlFor="custom"
               data-ripple-dark="true"
             >
               <input
@@ -205,12 +211,12 @@ const ContactForm = () => {
                 name="type"
                 type="radio"
                 onChange={() => setToggle(!toggle)}
-                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
+                className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-emerald-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-emerald-500 checked:before:bg-emerald-500 hover:before:opacity-10"
               />
-              <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
+              <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-emerald-200 opacity-0 transition-opacity peer-checked:opacity-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-3.5 w-3.5"
+                  className="h-3.5 w-3.5"
                   viewBox="0 0 16 16"
                   fill="currentColor"
                 >
@@ -219,8 +225,8 @@ const ContactForm = () => {
               </div>
             </label>
             <label
-              class="mt-px cursor-pointer select-none font-light text-white uppercase"
-              for="custom"
+              className="mt-px cursor-pointer select-none font-light text-white uppercase"
+              htmlFor="custom"
             >
               custom
             </label>
