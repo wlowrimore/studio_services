@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(
-      `Name: ${formData.first_name} ${formData.last_name}, Email: ${formData.email}, Project Name: ${formData.project_name}, Message: ${formData.message}`
+      `Here is the information you entered: Name: ${formData.first_name} ${formData.last_name}, Email: ${formData.email}, Project Name: ${formData.project_name}, Message: ${formData.message}`
     );
   };
 
