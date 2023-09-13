@@ -6,7 +6,7 @@ The site follows best practices in naming conventions, file structure and basic 
 
 I do have available some full stack and backend work on this github page.  Feel free to look around!
 
-<video src="public/images/readme/videos/walkthru.mp4" width="800" height="600" controls></video>
+<img src='public/images/readme/home.webp' alt='home-page' />
 
 View the live site [here](https://studio-services.vercel.app/).
 
