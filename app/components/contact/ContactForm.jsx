@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(
-      `Here is the information you entered: Name: ${formData.first_name} ${formData.last_name}, Email: ${formData.email}, Project Name: ${formData.project_name}, Message: ${formData.message}`
+      `Hello, ${formData.first_name} ${formData.last_name}! Your email address is ${formData.email},  Your phone number is ${formData.phone},  your project is called ${formData.project_name} and your message reads: ${formData.message}`
     );
   };
 
@@ -290,7 +290,7 @@ const ContactForm = () => {
             send
           </button>
           <button
-            type="submit"
+            type="reset"
             className="w-full py-2 px-2 text-xl bg-red-800 bg-opacity-30 border border-white rounded-md uppercase hover:bg-opacity-50"
           >
             clear

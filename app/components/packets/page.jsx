@@ -20,7 +20,6 @@ const Packets = () => {
   }, []);
 
   return (
-    // <div className="w-full mx-auto bg-gray-950 bg-opacity-80 pt-16 pb-2 pl-[20rem] pr-[14rem]">
     <div className="w-full mx-auto bg-gray-900 px-2 pt-4 pb-2 md:pt-16 md:pl-[20rem] md:pr-[18rem]">
       <p className="text-md text-white">
         <span className="text-green-600 text-lg">Imperial Studios</span> comes

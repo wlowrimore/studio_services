@@ -13,14 +13,10 @@ import Effects from "../../../public/images/svg/sound_effects.svg";
 
 const ServicesDetails = () => {
   return (
-    // <div id="services" className="w-screen min-h-screen text-2xl bg-vinylrecord bg-no-repeat bg-cover bg-opacity-20">
-
     <div
       id="services"
       className="w-screen text-lg font-bold bg-vinylrecord bg-no-repeat bg-cover"
     >
-      {/* <div className="w-3/4 mx-auto pt-[10rem] pb-[5rem] flex justify-center items-center"> */}
-
       <div className="flex flex-col py-6 px-2 justify-center items-center md:py-12 md:h-[50rem] md:pl-[20rem] md:pr-[15rem]">
         <div className="pt-20">
           <h1 className="text-[25rem] text-gray-950 opacity-10 uppercase tracking-widest relative top-[950%]">

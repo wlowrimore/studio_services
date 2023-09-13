@@ -139,7 +139,6 @@
     list-style: none;
     display: flex;
     width: 100vw;
-    /* background-color: silver; */
     flex-direction: row;
     height: 100vh;
     padding: 0 0.3rem 0 0;
@@ -171,11 +170,7 @@
     height: 2.5rem;
   }
 
-  
-
-
   .link-text {
-    /* display: flex; */
     text-align: center;
     font-size: 0.7rem;
     opacity: 100%;

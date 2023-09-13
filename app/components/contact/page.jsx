@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col justify-center items-center md:items-center md:pb-[10rem]">
+      <section className="w-full flex flex-col justify-center items-center md:items-center md:pb-[10rem] md:mt-[4rem]">
         <div className="w-full md:p-6 flex flex-col border-y-4 border-white md:border-none text-white bg-gray-950 bg-opacity-70 py-4">
           <div className="flex flex-col items-center md:items-start mx-auto">
             <h2 className="text-lg md:text-3xl font-bold tracking-wider uppercase">
